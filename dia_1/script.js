@@ -18,8 +18,26 @@ const newEmployees = (pessoaContrada) => {
 console.log(newEmployees(pessoaContrada));
 
 // // Exercício 2
-// const verificaNumero = () => {
+const verificaNumero = (number) => {
+    let sorteio = Math.floor(Math.random()*5 + 1);
+    console.log(sorteio);
 
-// }
+    if (sorteio === number) {
+        return true;
+    }
+    return false;
+}
+
+
+const sorteio = (number, funcao) => {
+    funcao = verificaNumero(number);
+
+    if (funcao === true) {
+        return `Parabéns você ganhou`
+    }
+    return `Tente Novamente`;
+}
+console.log(sorteio(5,verificaNumero));
+
 // Exercício 3
 // Exercício 4
