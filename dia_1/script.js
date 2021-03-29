@@ -1,22 +1,25 @@
 // Exercício 1
-const pessoaContrada = (nome, email) => {
+const pessoaContrada = (nome) => {
     return pessoa = {
-        nome,
-        email
+        nome: nome,
+        email: `${nome.split(' ').join('').toLowerCase()}@trybe.com`
     }
 }
-// console.table(pessoaContrada('Gabriel Pereira', 'gabriel@pereira.com'));
+// console.table(pessoaContrada('Gabriel Pereira'));
 
-const newEmployees = () => {
+const newEmployees = (pessoaContrada) => {
     const employees = {
-      id1: pessoaContrada('Pedro Guerra', 'pedroguerra@trybe.com'),// Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro
-      id2: pessoaContrada('Luiza Drumond', 'luizadrumond@trybe.com'),// Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro
-      id3: pessoaContrada('Carla Paiva', 'carlapaiva@trybe.com')// Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro
+      id1: pessoaContrada('Pedro Guerra'),// Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro
+      id2: pessoaContrada('Luiza Drumond'),// Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro
+      id3: pessoaContrada('Carla Paiva')// Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro
     }
-    return console.log(employees);
+    return employees;
   };
-newEmployees();
+console.log(newEmployees(pessoaContrada));
 
-// Exercício 2
+// // Exercício 2
+// const verificaNumero = () => {
+
+// }
 // Exercício 3
 // Exercício 4
