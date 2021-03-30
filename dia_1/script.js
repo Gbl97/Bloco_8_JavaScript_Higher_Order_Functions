@@ -40,4 +40,14 @@ const sorteio = (number, funcao) => {
 console.log(sorteio(5,verificaNumero));
 
 // Exercício 3
+const validaResposta = (respostaUsuario) => {
+    return (respostaCerta) => {
+      if (respostaUsuario === respostaCerta) {
+          return true;
+      }
+      return false;
+    }
+}
+
+console.log(validaResposta ('qualquerCoisa') ('coisa'));
 // Exercício 4
