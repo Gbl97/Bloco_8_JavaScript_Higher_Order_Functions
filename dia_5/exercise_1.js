@@ -7,9 +7,9 @@ const rectangle2 = [3, 5];
 const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 
-console.log(...rectangle1);
-console.log(rectangleArea(...rectangle1));
+// console.log(...rectangles);
+// console.log(rectangleArea(...rectangles));
 
-// rectangles.forEach((rectangle) => {
-// assert.strictEqual(rectangleArea(...rectangle), rectangle[0] * rectangle[1]) // altere a chamada da funcao rectangleArea
-// });
+rectangles.forEach((rectangle) => {
+assert.strictEqual(rectangleArea(...rectangle), rectangle[0] * rectangle[1]) // altere a chamada da funcao rectangleArea
+});
